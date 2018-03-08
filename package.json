@@ -1,0 +1,16 @@
+{
+  "name": "tangramob",
+  "version": "1.0.0",
+  "description": "tangramob website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SMoL Team",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.0"
+  }
+}

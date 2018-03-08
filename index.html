@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html
+    lang="it" 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:fb="http://ogp.me/ns/fb#">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:url" content="http://www.tangramob.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Reinventa la mobilità urbana">
+    <meta property="og:description" content="Un simulatore per valutare l'impatto di nuove soluzioni di mobilità in un'area urbana d'interesse">
+    <meta property="og:site_name" content="Tangramob | simulatore per smart mobility">
+    <meta property="og:image" content="http://www.tangramob.com/assets/img/logo/home.png"/>
+    <!--<meta property="og:image:width"  content=""/>-->
+    <!--<meta property="og:image:height" content=""/>-->
+    
+    <title>TangraMob</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css" />
+    
+    <!-- Navbar -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar-style.css">
+
+    <!-- Extras -->
+    <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    <!-- Custom animations -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+    
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="shortcut icon" type="image/ico" sizes="16x16 32x32 48x48" href="assets/img/logo/favicon.ico">
+    </head>
+
+    <body>
+        <!-- Nav Menu Section -->
+        <!--<div class="logo-menu">-->
+            <!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">-->
+                    <!-- Brand and toggle get grouped for better mobile display -->
+            <!--        <div class="navbar-header">-->
+            <!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">-->
+            <!--                <span class="sr-only">Toggle navigation</span>-->
+            <!--                <span class="icon-bar"></span>-->
+            <!--                <span class="icon-bar"></span>-->
+            <!--                <span class="icon-bar"></span>-->
+            <!--            </button>-->
+            <!--            <div id="brandLogo" class="navbar-brand"><!--img src="assets/img/logo/logo.png" width="150px" height="40px" Tangramob</div>-->
+            <!--        </div>-->
+
+            <!--        <div class="collapse navbar-collapse" id="navbar">-->
+            <!--            <ul class="nav navbar-nav">-->
+            <!--                <li><a class="menu" href="#hero-area"><i class="fa fa-home"></i> Home</a></li>-->
+            <!--                <li><a class="menu" href="#features"><i class="fa fa-list"></i> Features</a></li>-->
+            <!--                <li><a class="menu" href="#overview"><i class="fa fa-cogs"></i> Overview</a></li>-->
+            <!--                <li><a class="menu" href="#audience"><i class="fa fa-handshake-o"></i> Audience</a></li>-->
+            <!--                <li><a class="menu" href="#about"><i class="fa fa-address-card-o"></i> About</a></li>-->
+            <!--                <li><a class="menu" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>-->
+            <!--                <div class="nav navbar-nav navbar-right"><img class="flag-it" src="assets/img/language/ita.png" width="20px" height="12px"> <img class="flag-en" src="assets/img/language/eng.png" width="20px" height="12px"></div>-->
+            <!--            </ul>-->
+            <!--        </div>-->
+            <!--</nav>-->
+                <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a id="brandLogo" class="navbar-brand page-scroll" href="#hero-area">Tangramob</a>
+                        </div>
+                        <div class="navbar-collapse collapse" id="bs-navbar">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a class="page-scroll" href="#features">Features</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#overview">Overview</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#audience">Audience</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#docs">Docs</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a class="" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">
+                                        <img class="flag-it" src="assets/img/language/ita.png" width="20px" height="12px">
+                                        <img class="flag-en" src="assets/img/language/eng.png" width="20px" height="12px">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        <!--</div>-->
+        <!-- Nav Menu Section End -->
+
+        <!-- Hero Area Section -->
+
+        <section id="hero-area">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img class="animated fadeIn entrance" src="assets/img/logo/logo.png" width="40%">
+                        <h3 class="subtitle hide-it animated fadeInUpBig delayed">Reinventa la mobilità urbana!</h3>
+                        <h3 class="subtitle show-en animated fadeInUpBig delayed">Reinvent your city's urban mobility!</h3>
+                    </div>
+                </div>
+                <!-- video class="primary-video" autoplay="" loop="" preload="metadata">
+                    <source media="(min-width: 720px)" controls="true" src="assets/video/preview.mp4" type='video/mp4'>
+                </video-->
+            </div>
+        </section>
+
+        <!-- Hero Area Section End-->
+
+        <!-- Service Section -->
+
+        <section id="features">
+            <div class="container text-center">
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="title show-en">What is Tangramob</h1>
+                        <h1 class="title hide-it">Cos'è Tangramob</h1>
+                        <img class="macbook" src="assets/img/hero/macbook.png" alt="">
+                        <h3 id="slogan" class="subtitle show-en">A simulation framework for assessing the impacts of introducing smart mobility solutions within an urban area of interest</h3>
+                        <h3 id="slogan" class="subtitle hide-it">Un simulatore per valutare l'impatto di nuove soluzioni di mobilità in un'area urbana d'interesse</h3>
+                        <p id ="slogan-subtitle" class="subtitle show-en">
+                                Tangramob supports you in shaping smart mobility initiatives for your city at no deployment costs. This allows you to assess
+                                the impacts, in terms of people acceptance and system performance, of your mobility initiatives in advance.
+                        </p>
+                        <p id ="slogan-subtitle" class="subtitle hide-it">
+                                Tangramob ti assiste nella definizione di iniziative di mobilità per la tua città, senza costi di sviluppo. Potrai quindi
+                                stimare l'impatto di tali iniziative in termini di popolarità ed efficacia
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item wow slideInLeft animated first-an">
+                            <img class="feature-img" src="assets/img/portfolio/research.png">
+                            <h3 class="show-en">User-friendly</h3>
+                            <h3 class="hide-it">Semplice da utilizzare</h3>
+                            <p class="show-en">
+                                Our web-based interface makes it possible to perform simulations easily and without the need to install any software.
+                                Code runs on our servers and you will be notified as soon as the results will be available.
+                            </p>
+                            <p class="hide-it">
+                                La nostra interfaccia web permette di lanciare simulazioni con assoluta semplicità e senza bisogno di installare alcun software.
+                                Le simulazioni vengono eseguite sui nostri server e sarai notificato appena i risultati saranno pronti.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item wow slideInLeft animated second-an">
+                            <img class="feature-img" src="assets/img/services/brain4.png">
+                            <h3 class="show-en">Realistic</h3>
+                            <h3 class="hide-it">Realistico</h3>
+                            <p class="show-en">
+                                Tangramob simulations are based on Machine Learning techniques in order to reproduce human behaviors.
+                                This allows the simulator to produce realistic and realiable results with a microscopic detail.
+                            </p>
+                            <p class="hide-it">
+                               Le simulazioni sono basate su tecniche di Machine Learning allo scopo di riprodurre il comportamento umano.
+                               Ciò permette al simulatore di produrre risultati realistici e attendibili con un dettaglio microscopico.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item wow slideInLeft animated third-an">
+                            <img class="feature-img" src="assets/img/services/ones.png">
+                            <h3 class="show-en">Your city first</h3>
+                            <h3 class="hide-it">La tua città è qui</h3>
+                            <p class="show-en">
+                                Tangramob allows you to simulate your city and analyze the effects of different mobility solutions.
+                                The simulator can thus support whatever geographical area as well as a pool of mobility services.
+                            </p>
+                            <p class="hide-it">
+                                Con Tangramob puoi simulare la tua città e studiare come diverse soluzioni di mobilità impattano sul territorio.
+                                Il simulatore è quindi in grado di supportare qualsiasi area geografica così come un insieme di servizi di mobilità
+                                pronti all'uso.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Service Section End -->
+        
+        <!-- Map Section -->
+        <section id="deployment">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title show-en">Shape your smart mobility initiative</h1>
+                    <h1 class="title hide-it">Modella la tua iniziativa di mobilità</h1>
+                    <h3 class="subtitle show-en">Identify the best positions in the city and start supplying new mobility services</h3>
+                    <h3 class="subtitle hide-it">Identifica le migliori posizioni nella città e inizia ad offrire nuovi servizi di mobilità</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img class="wow fadeIn animated faster-entrance" src="assets/img/map/ascvlvm-SMI.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Map Section End-->
+
+        <!-- Portfolio Section -->
+
+        <section id="overview">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title show-en">Tangramob in a nutshell</h1>
+                    <h1 class="title hide-it">Tangramob in pillole</h1>
+                    <br><br>
+                    <div style="margin-top: 20px;"> 
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <div class="product-item wow fadeInLeft animated">
+                                <img id="imgAnimate" src="assets/img/portfolio/research.png">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="switcher">
+                                <a class="circle circleRES"></a>
+                                <a class="circle circleSHOW"></a>
+                                <a class="circle circleSHD"></a>
+                                <a class="circle circleSIM"></a>
+                                <a class="circle circleSTAT"></a>
+                            </div>
+
+                            <div id="research" class="featureLinks wow bounceInDown animated first-an">
+                                <h2 class="show-en">
+                                    Choose an area
+                                </h2>
+                                <h2 class="hide-it">
+                                    Scegli un'area
+                                </h2>
+                                <p class="featureDescription show-en">
+                                    Select a geographic area and start your mobility revolution
+                                </p>
+                                <p class="featureDescription hide-it">
+                                    Seleziona un'area geografica di interesse e inizia la tua rivoluzione sulla mobilità
+                                </p>
+                            </div>
+                            <div id="show-pop" class="featureLinks wow bounceInDown animated second-an">
+                                <h2 class="show-en">
+                                    Population view
+                                </h2>
+                                <h2 class="hide-it">
+                                    Visualizza la popolazione
+                                </h2>
+                                <p class="featureDescription show-en">
+                                    Understand the distribution of the population within your area
+                                </p>
+                                <p class="featureDescription hide-it">
+                                    Visualizza come la popolazione è distribuita all'interno della tua area
+                                </p>
+                            </div>
+                            <div id="smarthub-deploy" class="featureLinks wow bounceInDown animated third-an">
+                                <h2 class="show-en">
+                                    Shape your mobility initiative
+                                </h2>
+                                <h2 class="hide-it">
+                                    Modella la tua iniziativa di mobilità
+                                </h2>
+                                <p class="featureDescription show-en">
+                                    Place and configure your mobility services on the map
+                                </p>
+                                <p class="featureDescription hide-it">
+                                    Posiziona e configura i tuoi servizi di mobilità sulla mappa
+                                </p>
+                            </div>
+                            <div id="simulation" class="featureLinks wow bounceInDown animated fourth-an">
+                                <h2 class="show-en">
+                                    Simulate your initiative
+                                </h2>
+                                <h2 class="hide-it">
+                                    Simula la tua iniziativa
+                                </h2>
+                                <p class="featureDescription show-en">
+                                    Start the simulation and wait for results
+                                </p>
+                                <p class="featureDescription hide-it">
+                                    Inizia la simulazione e attendi i risultati
+                                </p>
+                            </div>
+                            <div id="stats" class="featureLinks wow bounceInDown animated fifth-an">
+                                <h2 class="show-en">
+                                    Check your results
+                                </h2>
+                                <h2 class="hide-it">
+                                    Controlla i risultati
+                                </h2>
+                                <p class="featureDescription show-en">
+                                    Understand the impacts of your initiative on the urban system
+                                </p>
+                                <p class="featureDescription hide-it">
+                                    Valuta l'impatto della tua iniziativa sul sistema urbano
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End -->
+
+        <!-- Client Section -->
+        <section id="audience">
+            <div class="container text-center">
+                <div class="row">
+                    <h1 class="title show-en">Target Audience</h1>
+                    <h1 class="title hide-it">Destinatari</h1>
+                    <h3 class="subtitle show-en">TangraMob is addressed to all people dealing with urban mobility</h3>
+                    <h3 class="subtitle hide-it">TangraMob è rivolto a tutti coloro che si occupano di mobilità urbana</h3>
+                    <div class="wow fadeInDown">
+                        <div class="wow slideInRight animated first-an">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="service-item">
+                                    <img src="assets/img/clients/urban-planners.jpg" alt="" width="90%">
+                                    <h3 class="show-en">Urban Planners</h3>
+                                    <h3 class="hide-it">Pianificatori Urbani</h3>
+                                    <p class="show-en">Aim at improving the urban mobility</p>
+                                    <p class="hide-it">Migliorare la mobilità urbana</p>
+                                    <p class="hide-it"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow slideInRight animated second-an">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="service-item">
+                                    <img src="assets/img/clients/mobility-providers.png" alt=""  width="90%">
+                                    <h3 class="show-en">Transport Companies</h3>
+                                    <h3 class="hide-it">Aziende di trasporto</h3>
+                                    <p class="show-en">Need to ponder their investments in mobility</p>
+                                    <p class="hide-it">Valutare i loro investimenti sulla mobilità</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow slideInRight animated third-an">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="service-item">
+                                    <img src="assets/img/clients/researchers.jpg" alt=""  width="90%">
+                                    <h3 class="show-en">Researchers and Developers</h3>
+                                    <h3 class="hide-it">Ricercatori e sviluppatori</h3>
+                                    <p class="show-en">Evaluating new mobility solutions</p>
+                                    <p class="hide-it">Valutare nuove soluzioni di mobilità</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Client Section End -->
+
+
+        <!-- About Section -->
+
+        <section id="about">
+            <div class="container wow animated fadeIn entrance">
+                <div class="row">
+                    <h1 class="title show-en">About us</h1>
+                    <h1 class="title hide-it">Chi siamo</h1>
+                    <br><br>
+                    
+                    <!-- Chi s'è muort pics -->
+                    <div class="row pics">
+                            <div class="col-md-2 col-md-offset-1">
+                          <a href="#demo" data-toggle="collapse">
+                            <img src="assets/img/about/polini_mescal.png" class="img-circle person" alt="Andrea Polini">
+                          </a>
+                          <div id="demo" class="collapse">
+                            <p><strong>Andrea Polini</strong></p>
+                            <p>Associate Professor</p>
+                            <p class="team-social-icons">
+                                <a href="https://scholar.google.it/citations?user=vQkGBJIAAAAJ&hl=en"><i class="fa fa-university"></i></a>
+                                <a href="https://it.linkedin.com/in/andrea-polini-60ba4a4"><i class="fa fa-linkedin"></i></a>
+                                <a href="mailto:andrea.polini@unicam.it"><i class="fa fa-envelope"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                          <a href="#demo2" data-toggle="collapse">
+                            <img src="assets/img/about/dea.png" class="img-circle person" alt="Francesco De Angelis">
+                          </a>
+                          <div id="demo2" class="collapse">
+                            <p><strong>Francesco De Angelis</strong></p>
+                            <p>Researcher</p>
+                            <p class="team-social-icons">
+                                <a href="https://francescodeangelis.org/"><i class="fa fa-university"></i></a>
+                                <a href="https://it.linkedin.com/in/francescodeangelis"><i class="fa fa-linkedin"></i></a>
+                                <a href="mailto:francesco.deangelis@unicam.it"><i class="fa fa-envelope"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <a href="#demo3" data-toggle="collapse">
+                            <img src="assets/img/about/carlo.png" class="img-circle person" alt="Random Name">
+                          </a>
+                          <div id="demo3" class="collapse">
+                            <p><strong>Carlo Castagnari</strong></p>
+                            <p>Researcher</p>
+                            <p class="team-social-icons">
+                                <a href=""><i class="fa fa-university"></i></a>
+                                <a href="https://www.linkedin.com/in/carlo-castagnari-08726a136/"><i class="fa fa-linkedin"></i></a>
+                                <a href="mailto:carlo.castagnari@unicam.it"><i class="fa fa-envelope"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                    
+                        <div class="col-md-2">
+                          <a href="#demo4" data-toggle="collapse">
+                            <img src="assets/img/about/giorgio_forcina.png" class="img-circle person" alt="Andrea Polini">
+                          </a>
+                          <div id="demo4" class="collapse">
+                            <p><strong>Giorgio Forcina</strong></p>
+                            <p>Researcher</p>
+                            <p class="team-social-icons">
+                                <a href="https://www.researchgate.net/profile/Giorgio_Forcina"><i class="fa fa-university"></i></a>
+                                <a href="https://it.linkedin.com/in/giorgio-forcina-302585142"><i class="fa fa-linkedin"></i></a>
+                                <a href="mailto:giorgio.forcina@unicam.it"><i class="fa fa-envelope"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                          <a href="#demo5" data-toggle="collapse">
+                            <img src="assets/img/about/jaco_deberardinis.png" class="img-circle person" alt="Francesco De Angelis">
+                          </a>
+                          <div id="demo5" class="collapse">
+                            <p><strong>Jacopo de Berardinis</strong></p>
+                            <p>Researcher</p>
+                            <p class="team-social-icons">
+                                <a href="https://www.researchgate.net/profile/Jacopo_De_Berardinis"><i class="fa fa-university"></i></a>
+                                <a href="http://jacopodeberardinis.info"><i class="fa fa-address-card" aria-hidden="true"></i></a>
+                                <a href="mailto:jacopo.deberardinis@unicam.it"><i class="fa fa-envelope"></i></a>
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- End chi s'è muort pics -->
+                    
+                    <!-- SMoL Description -->
+                    <div class="col-md-12 col-sm-12" style="text-align: justify">
+                        <p class="show-en">
+                            TangraMob is conceived and realized by a research team of the Computer Science Division at University of Camerino in a joint
+                            effort with the School of Architecture and Design. The team, named <a href="http://smol.unicam.it" target="_blank">Unicam SMoL</a>, 
+                            was born with the intention of studying and analyzing the complex world of Smart Mobility. Our mission is to design and implement 
+                            computational model, so as to offer high-tech and scientifically grounded solutions for continuosly  improving the urban fabric efficiency. 
+                            The SMoL team consists of five members with a Computer Science background. The main proficiencies revolve around four macro-areas, namely 
+                            Smart Cities, Machine Learning, Software Engineering and Internet of Things.
+                        </p>
+                        <p class="hide-it">
+                            TangraMob è realizzato da un gruppo di ricerca della sezione di informatica della Scuola di Scienze e Tecnologie dell'Università di Camerino, 
+                            in collaborazione con la Scuola di Architettura e Design. Il team, chiamato <a href="http://smol.unicam.it" target="_blank">Unicam SMoL</a>, è nato 
+                            con l’esigenza di studiare ed analizzare il complesso mondo della Smart Mobility. La nostra missione è quella di progettare ed implementare modelli 
+                            computazionali, al fine di proporre nuovi soluzione innovative e scientificamente valide, per uno sviluppo del tessuto urbano sempre più efficiente 
+                            e ottimizzato. In particolare, SMoL è composto da cinque membri tutti provenienti dal mondo dell’Information Technology. Difatti, le principali 
+                            competenze del team ruotano attorno a quattro macro-aree, ovvero Smart Cities, Machine Learning, Software Engineering e Internet of Things.
+                        </p>
+                    </div>
+                    <!-- End SMoL -->
+                </div>
+                
+            </div>
+        </section>
+        <!-- About Section End -->
+        
+        <!-- Docs Section -->
+        <section id="docs">
+                <div class="container text-center">
+                    <div class="row">
+                        <h1 class="title show-en">Documentation available</h1>
+                        <h1 class="title hide-it">Documentazione disponibile</h1>
+                        <div class="list-group">
+                            <a href="/docs/Tangramob_slide_WEB__eng_.pdf" class="list-group-item docsThemeRed" download>
+                              <h4 class="list-group-item-heading">Tangramob slides short (English version)</h4>
+                              <p class="list-group-item-text">Short presentation of the project</p>
+                            </a>
+                            <a href="/docs/Tangramob_slide_WEB__ita_.pdf" class="list-group-item docsThemeRed" download>
+                              <h4 class="list-group-item-heading">Tangramob slides short (Italian version)</h4>
+                              <p class="list-group-item-text">Breve presentazione del progetto</p>
+                            </a>
+                            <a href="/docs/SmartHub_Thesis.pdf" class="list-group-item docsThemeRed" download>
+                              <h4 class="list-group-item-heading">MSc Thesis of Tangramob</h4>
+                              <p class="list-group-item-text">MSc thesis of Jacopo, Giorgio and Carlo, detailing the key points of Tangramob (ex SmartHub),
+                              from the formalization to the design and implementation of the first version of the framework.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Docs Section End -->
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title show-en">Contact us</h1>
+                    <h1 class="title hide-it">Contattaci</h1>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 logo-unicam">
+                                <img class="wow bounceInLeft animated" src="assets/img/contact/unicam.png" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-address">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="contact-info wow bounceInRight animated">
+                                        <p><a id="map" href="https://www.google.it/maps/place/Universit%C3%A0+di+Camerino+Scuola+di+Architettura+e+Design+-+S+Angelo+Magno/@42.8514281,13.5733228,19.01z/data=!4m5!3m4!1s0x0:0x1f76c4201248716e!8m2!3d42.852189!4d13.5735058" target="_blank"><i class="fa fa-map-marker"></i> 
+                                        School of Architecture and Design
+                                        <br>
+                                        Viale della Rimembranza
+                                        <br>
+                                        63100 Ascoli Piceno (AP)
+                                        <br>
+                                        ITALY</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contact-info wow bounceInRight animated">
+                                        <p><a id="map" href="https://www.google.it/maps/place/Via+Madonna+delle+Carceri,+9,+62032+Camerino+MC/@43.1402543,13.067122,17z/data=!3m1!4b1!4m5!3m4!1s0x132ddb920609dd25:0x46c0c44bf336f155!8m2!3d43.1402543!4d13.0693107" target="_blank"><i class="fa fa-map-marker"></i> 
+                                        School of Science and Technology
+                                        <br>
+                                        Via Madonna delle Carceri
+                                        <br>
+                                        62032 Camerino (MC)                                                                                                                                                                
+                                        <br>
+                                        ITALY</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center wow bounceInUp animated">
+                        <a id="mail" href="mailto:smol-team@unicam.it"><i class="fa fa-envelope"></i> smol-team@unicam.it</a>
+                        <div class="social-links">
+                            <a class="social" href="https://www.linkedin.com/company-beta/11114092/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                            <span class="social" href="#"><i class="fa fa-facebook fa-2x"></i></span>
+                            <span class="social" href="#" target="_blank"><i class="fa fa-github fa-2x"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Add Google Maps -->
+                    <div id="googleMap"></div>
+                        <script>
+                            function myMap() {
+                            var camerino = new google.maps.LatLng(43.1402543, 13.0693107);
+                            var ascoli   = new google.maps.LatLng(42.852189, 13.5735058);
+                            var myCenter = new google.maps.LatLng(42.734629, 12.834331);
+                            var mapProp = {center:myCenter, zoom:8, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            var marker_came = new google.maps.Marker({position:camerino});
+                            var marker_asco = new google.maps.Marker({position:ascoli});
+                            marker_came.setMap(map);
+                            marker_asco.setMap(map); 
+                            }
+                        </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj3MLvSdOVn2d-NluvUKYeVwed1y7qNB4&callback=myMap"></script>
+            
+            <div class="arisali">
+                    <span class="to-top"><a class="page-scroll" href="#hero-area">
+                        <i class="fa fa-angle-up fa-2x"></i></a>
+                    </span>
+            </div>
+            
+         </div> <!-- Container -->
+            
+    </section>
+
+    <!-- Contact Section End-->
+    <div id="copyright">
+        <div class="container">
+            <div class="col-md-12"><p>© SMoL 2017 All right reserved. Designed & Developed by SMoL</p></div>
+        </div>
+    </div>
+    <!-- Copyright Section End-->
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Smooth Scroll -->
+    <!--<script src="assets/js/smooth-scroll.js"></script>-->
+    
+    <!-- JQuery Easing -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- WOW lib -->
+    <script src="assets/js/wow.js"></script>
+    <!-- Navbar custom JS -->
+    <script src="assets/js/navbar-scripts.js"></script>
+    <!-- All JS plugin Triggers -->
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-99383541-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+.loop {
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+}
+
+.entrance {
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+
+.faster-entrance {
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+}
+
+.delayed {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+
+.first-an {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+
+.second-an {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+}
+
+.third-an {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+}
+
+.fourth-an {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+
+.fifth-an {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
