@@ -62,7 +62,7 @@ a:focus {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #454d59 !important;
+    color: #fff !important;
     background-color: transparent;
 }
 
@@ -92,7 +92,7 @@ a:focus {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.5);
         padding: 20px;
         letter-spacing: 1.1px;
         /*text-shadow: 1px 1px 1px rgba(60,60,60,0.7);*/
