@@ -81,7 +81,7 @@ a:focus {
     }
 
     .navbar-header > .navbar-brand {
-        color: rgba(255,255,255,0.7);
+        color: rgb(255,255,255);
         padding: 19px;
     }
 
@@ -108,12 +108,7 @@ a:focus {
         background-color: rgb(200, 65, 80);
     }
 
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 15px;
-        color: #454d59;
-        padding: 20px;
-        letter-spacing: 1px;
-    }
+    
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
